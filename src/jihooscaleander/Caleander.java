@@ -10,21 +10,21 @@ public class Caleander {
 //		System.out.println("15 16 17 18 19 20 21");
 //		System.out.println("22 23 24 25 26 27 28");
 //		
-		int a,b;
+//		int a,b;
 		System.out.println("두 숫자 를 입력하세요");
 		Scanner scanner = new Scanner(System.in);
-//		int c = scanner.nextInt();
-//		int d = scanner.nextInt();	
+		int c = scanner.nextInt();
+		int d = scanner.nextInt();	
 		//여기까지가 내가 사용한 방법
 		
-		String s,s1;
-		s = scanner.next();
-		s1 = scanner.next();
-		a = Integer.parseInt(s);
-		b = Integer.parseInt(s1);
-		System.out.printf("당신이 입력한 값 : %d,%d \n"  , a, b);
+//		String s,s1;
+//		s = scanner.next();
+//		s1 = scanner.next();
+//		a = Integer.parseInt(s);
+//		b = Integer.parseInt(s1);
+		System.out.printf("당신이 입력한 값 : %d,%d \n"  , c, d);
 		
-		System.out.printf("%d와 %d의 더하기 값은  %d입니다" ,a , b, a+b );
+		System.out.printf("%d와 %d의 더하기 값은  %d입니다" ,c , d, c+d );
 //		System.out.println("첫 번째로 입력한 값 : " +number);
 //		System.out.println("두 번째로 입력한 값 : " +number2);
 //		    System.out.println(number * number2);	
