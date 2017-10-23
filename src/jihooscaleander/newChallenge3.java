@@ -9,17 +9,20 @@ public class newChallenge3 {
 		Month mon = new Month();
 		Scanner scanner = new Scanner(System.in);
 		while (true) {
-			System.out.println("달을 입력해주세요.");
-			System.out.print(PROMPT);
-			int num = scanner.nextInt();
-			if (num == -1) {
+			System.out.println("연도를 입력 하십시오. : ");
+	    	System.out.println("Year : ");
+	    	int num = scanner.nextInt();
+			System.out.println("달을 입력 하십시오. : ");
+			System.out.println("Month: ");
+			int num2 = scanner.nextInt();
+			if (num2 == -1) {
 				System.out.println("프로그램 종료를 입력하셨습니다.");
 				break;
-			} else if (num > 12) {
+			} else if (num2 > 12) {
 				System.out.println("프로그램 종료를 입력하셨습니다.");
 				break;
 			}
-		    mon.printCaleander(2);
+		    mon.printCaleander(num, num2);
 		}
 		scanner.close();
 
@@ -27,8 +30,8 @@ public class newChallenge3 {
 
 	public static void main(String[] args) {
 		newChallenge3 p = new newChallenge3();
-		
-		p.runPrompt();
+	p.runPrompt();
+	
 		
 	}
 }
