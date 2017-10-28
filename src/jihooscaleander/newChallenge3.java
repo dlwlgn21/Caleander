@@ -11,26 +11,29 @@ public class newChallenge3 {
 		while (true) {
 			System.out.println("연도를 입력 하십시오. : ");
 	    	System.out.println("Year : ");
-	    	int num = scanner.nextInt();
+	    	int year = scanner.nextInt();
+	    	
 			System.out.println("달을 입력 하십시오. : ");
 			System.out.println("Month: ");
-			int num2 = scanner.nextInt();
-			if (num2 == -1) {
+			int month = scanner.nextInt();
+			
+			if (month == -1) {
 				System.out.println("프로그램 종료를 입력하셨습니다.");
 				break;
-			} else if (num2 > 12) {
+			} else if (month > 12) {
 				System.out.println("프로그램 종료를 입력하셨습니다.");
 				break;
 			}
-		    mon.printCaleander(num, num2);
+		    mon.printCaleander(year, month);
 		}
-		scanner.close();
-
+		
+          
 	}
-
+	
+   
 	public static void main(String[] args) {
 		newChallenge3 p = new newChallenge3();
-	p.runPrompt();
+        p.runPrompt();
 	
 		
 	}

@@ -13,9 +13,7 @@ public class newChallange {
 	
 	while(true) {
 		int num = scanner.nextInt();
-		System.out.println("달을 입력하세요 ");
-		System.out.println(PROMPT);
-	if(num > 0 && num < 13) {
+			if(num > 0 && num < 13) {
 		System.out.printf("  <<%d년       %d월>> \n",2017,num);
 		System.out.println("일    월    화     수       목      금     토");
 		System.out.println("--------------------");
@@ -31,8 +29,8 @@ public class newChallange {
 	}else if(num == -1) {
 		System.out.println("프로그램 종료");
 		break;
-	}scanner.close();
-	
+	}
+
 	}
 	
 	}

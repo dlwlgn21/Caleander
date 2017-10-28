@@ -21,9 +21,9 @@ public class Month {
 		} else
 			return nomal[num - 1];
 	}
-
+	Scanner scanner = new Scanner(System.in);
 	public void printCaleander(int year, int month) {
-		Scanner scanner = new Scanner(System.in);
+	
 		Month mon = new Month();
 		System.out.printf("      %2d년      %2d월 \n", year, month);
 		System.out.println(" SU MO TU WE TH FR SA");
@@ -37,7 +37,6 @@ public class Month {
 		}
 		System.out.println("");
 
-		scanner.close();
 	}
 
 	public static void main(String[] args) {
